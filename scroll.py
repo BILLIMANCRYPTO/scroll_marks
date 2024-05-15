@@ -19,7 +19,7 @@ def main():
     for wallet_address in wallets:
         parsed_data = parse_data(wallet_address)
         if isinstance(parsed_data, (int, float)):  # Проверяем, что возвращено число
-            print(f"{parsed_data}")
+            print(f"Total points for {wallet_address}: {parsed_data}")
         else:
             print(parsed_data)
 
